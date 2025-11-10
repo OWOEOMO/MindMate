@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="30" stdDeviation="20" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="680" height="520" fill="none"/>
+  <!-- phone -->
+  <g filter="url(#shadow)" transform="translate(70,30)">
+    <rect x="0" y="0" rx="28" ry="28" width="300" height="460" fill="#0f172a" stroke="url(#bg)"/>
+    <rect x="20" y="60" rx="14" ry="14" width="260" height="60" fill="#111827" stroke="rgba(255,255,255,.08)"/>
+    <rect x="20" y="140" rx="14" ry="14" width="260" height="240" fill="#111827" stroke="rgba(255,255,255,.08)"/>
+    <rect x="20" y="400" rx="12" ry="12" width="120" height="30" fill="url(#bg)"/>
+    <rect x="160" y="400" rx="12" ry="12" width="120" height="30" fill="#1f2937"/>
+  </g>
+  <!-- dashboard -->
+  <g filter="url(#shadow)" transform="translate(340,80)">
+    <rect x="0" y="0" rx="16" ry="16" width="270" height="320" fill="#0f172a" stroke="url(#bg)"/>
+    <rect x="18" y="18" rx="6" ry="6" width="234" height="70" fill="#111827"/>
+    <rect x="18" y="106" rx="6" ry="6" width="110" height="70" fill="#111827"/>
+    <rect x="142" y="106" rx="6" ry="6" width="110" height="70" fill="#111827"/>
+    <rect x="18" y="194" rx="6" ry="6" width="110" height="70" fill="#111827"/>
+    <rect x="142" y="194" rx="6" ry="6" width="110" height="70" fill="#111827"/>
+  </g>
+</svg>
