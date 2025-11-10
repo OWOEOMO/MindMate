@@ -1,32 +1,32 @@
 # chat.md
 
-> 本檔案記錄在開發落地頁期間與生成式 AI 的互動摘要（工具、提示詞與影響）。
+> This file records the summary of interactions with generative AI during the development of the landing page (tools, prompts, and their influence).
 
-## AI 工具與角色
-- 使用工具：**ChatGPT（GPT-5 Thinking）**
-- 參與階段：資訊彙整、文案草擬、頁面區塊規劃、CSS RWD 建議、可存取性（a11y）檢查清單。
+## AI Tools and Roles
+- Tool used: **ChatGPT (GPT-5 Thinking)**
+- Involvement stages: information consolidation, copywriting drafts, page layout planning, CSS RWD suggestions, and accessibility (a11y) checklist review.
 
-## 代表性提示詞（節錄 4 則）與回應摘要
-1. **提示詞**：
-   > 「請依據我方『MindMate』簡報，整理 4 大功能與差異化賣點，限校園心理健康場景，語氣專業精煉。」  
-   **回應摘要**：輸出 `主動 AI 分診／早期預警／24/7 AI 陪伴／AI 日誌與報告` 的一句話描述與要點，並補充院校總覽與危機路由。
+## Representative Prompts (4 excerpts) and Response Summaries
+1. **Prompt**:  
+   > “Based on our ‘MindMate’ presentation, organize 4 core features and differentiators, limited to the campus mental health scenario, in a professional and concise tone.”  
+   **Response Summary**: Generated concise descriptions for `Proactive AI Triage / Early Warning / 24/7 AI Companion / AI Journal & Reports`, adding notes on institutional overview and crisis routing.
 
-2. **提示詞**：
-   > 「為落地頁設計資訊架構：Hero、功能卡、差異化、方案、FAQ、聯絡；每區提供 1–2 句中文文案與 CTA。」  
-   **回應摘要**：產出各區塊標題與簡述，建議 CTA 採『索取 DEMO』與『GitHub 原始碼』雙按鈕。
+2. **Prompt**:  
+   > “Design the landing page information architecture: Hero, feature cards, differentiators, plans, FAQ, and contact; provide 1–2 lines of Chinese copy and CTAs for each section.”  
+   **Response Summary**: Produced section titles and summaries; suggested dual CTAs: “Request DEMO” and “GitHub Source.”
 
-3. **提示詞**：
-   > 「用純 CSS 實作深淺色主題切換（無框架），提供色彩變數與按鈕事件寫法。」  
-   **回應摘要**：提供 CSS 自訂變數方案與 `localStorage` 記憶主題的 JS 片段。
+3. **Prompt**:  
+   > “Implement light/dark theme switching with pure CSS (no framework); provide color variables and button event script.”  
+   **Response Summary**: Supplied a CSS custom variable setup with a JS snippet using `localStorage` to remember the selected theme.
 
-4. **提示詞**：
-   > 「請給我可無障礙的落地頁細節：skip-link、按鈕可聚焦、語義標籤、RWD 斷點。」  
-   **回應摘要**：列出 a11y 措施與 RWD 斷點建議，並提醒行動裝置觸控目標大小。
+4. **Prompt**:  
+   > “Provide accessible landing page details: skip-link, focusable buttons, semantic tags, RWD breakpoints.”  
+   **Response Summary**: Listed a11y measures and RWD breakpoint guidelines, reminding about touch target sizes for mobile devices.
 
-## 專案演進
-- 初稿以卡片式資訊呈現，之後加入 **主題切換** 與 **示範用表單** 增加互動感。
-- Hero 圖改為 **向量 SVG**，避免外部圖片授權與載入延遲。
-- 文案反覆壓縮到一～兩句，確保行動版首屏能完整讀懂價值主張。
+## Project Evolution
+- The first draft featured card-based information layout, later enhanced with **theme switching** and a **demo form** for interactivity.  
+- The hero image was replaced with a **vector SVG** to avoid external licensing issues and loading delays.  
+- The copy was repeatedly compressed to one or two sentences, ensuring the core value proposition is readable on the first mobile screen.
 
-## 來源
-- 內容要點與詞彙來自你提供之簡報（Wellness / Mental Health Track、功能與 UVP 敘述）。
+## Sources
+- Content points and phrasing derived from your provided presentation materials (Wellness / Mental Health Track, features, and UVP descriptions).
