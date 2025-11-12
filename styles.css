@@ -454,3 +454,45 @@ html.dark .shot-grad, body.dark .shot-grad, [data-theme="dark"] .shot-grad{
   background: linear-gradient(to top, rgba(11,18,32,.75), rgba(11,18,32,0));
 }
 
+.nav-toggle { display: none; }
+
+@media (max-width: 768px) {
+  html, body { max-width: 100%; overflow-x: hidden; }
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: 0;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .topnav { display: none; }
+
+  .topnav.open {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: rgba(16,16,16,.98);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .topnav.open a {
+    display: block;
+    font-size: 20px;
+    padding: 12px 0;
+  }
+
+  img, svg, video { max-width: 100%; height: auto; }
+}
+
+body.menu-open { overflow: hidden; }

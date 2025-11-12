@@ -39,6 +39,8 @@
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="切換選單" aria-expanded="false">☰</button>
+
       <div class="actions">
         <button class="btn ghost" id="themeToggle" aria-label="Toggle theme">🌓</button>
         <a class="btn primary" href="#contact">Schedule a Demo</a>
@@ -114,7 +116,6 @@
 
         <br>
 
-        <!-- 將非 FAQ 的 details 類別改為更語義化的 .details -->
         <details class="details">
           <summary>
             <img class="icon-inline" src="./assets/icons/triage.svg" alt="" aria-hidden="true">
@@ -550,15 +551,12 @@
     </div>
   </footer>
 
-  <!-- 安全後備：若 script.js 未提供 fakeSubmit / 年份填入，以下將保底處理 -->
   <script>
     (function () {
-      // 填入年份（若 script.js 未處理）
       var yEl = document.getElementById('year');
       if (yEl && !yEl.textContent) {
         yEl.textContent = new Date().getFullYear();
       }
-      // Demo 表單提交保底
       if (typeof window.fakeSubmit !== 'function') {
         window.fakeSubmit = function (e) {
           if (e && typeof e.preventDefault === 'function') e.preventDefault();
